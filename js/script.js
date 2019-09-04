@@ -7,7 +7,8 @@ var subjectName=[];
 
 
 function ranSubject(){
-    var randomSubject=Math.floor(Math.random()*subject.length)
-    return randomSubject;
+    var randomSubject=Math.floor(Math.random()*subjectName.length)
+    return subjectName[randomSubject];
 
 }
+
