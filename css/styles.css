@@ -48,4 +48,7 @@ ul {
   .button:hover {
     opacity: 1;
   }
+  li{
+    border-radius: px;
+  }
  
