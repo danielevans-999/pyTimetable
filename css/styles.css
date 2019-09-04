@@ -1,0 +1,15 @@
+.images {
+    background-image: url(../assets2/landing\ image3.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: scroll;  */
+    background-size: cover;
+    height: 720px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20%;
+    
+  }
