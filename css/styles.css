@@ -64,4 +64,8 @@ ul {
     background-color: #ddd;
     color:black;
   }
+  ul li{
+    padding:20px;
+  }
+  
  
