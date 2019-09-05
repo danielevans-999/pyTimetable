@@ -58,6 +58,7 @@ li {
   padding: 15px;
   text-decoration: none;
   font-size: 17px;
+  background-color: blue;
 }
 #navbar a:hover {
   background-color: #ddd;
