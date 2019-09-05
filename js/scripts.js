@@ -45,9 +45,15 @@ $(document).ready(function() {
         $(".table-responsive").show();
         $("#forms").hide();
         $("#submitForm").hide();
-
+        $("#print").show();
 
     });
+
+    function print() {
+        window.frames["print_frame"].document.body.innerHTML = document.getElementById("printableTable").innerHTML;
+        window.frames["print_frame"].window.focus();
+        window.frames["print_frame"].window.print();
+    };
 
 
 });
