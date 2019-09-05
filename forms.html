@@ -8,10 +8,8 @@
   <title>Timetable generator</title>
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
   <script src="js/scripts.js"></script>
 </head>
@@ -27,8 +25,8 @@
         </div>
       </div>
 
-       <!-- Teachers names and Ids -->
-    <div id="teacherInput"> </div>
+      <!-- Teachers names and Ids -->
+      <div id="teacherInput"> </div>
 
       <!-- Add number of subjects -->
       <div class="form-group" id="subjects">
@@ -43,14 +41,20 @@
 
       <div class="form-group row m-4 p-3">
         <div class="col-sm-6">
-          <button type="button" class="btn btn-outline-success" id="next">Submit</button>
+          <button type="button" class="btn btn-outline-success" id="next">Next</button>
         </div>
       </div>
     </form>
 
+    <div class="form-group row m-4 p-3" style="display:none">
+      <div class="col-sm-6">
+        <button type="button" class="btn btn-outline-success" id="submit">Submit</button>
+      </div>
+    </div>
+
     <!-- Create timetable -->
 
-    <div class="table-responsive">
+    <div class="table-responsive" style="display:none">
       <table class="table">
         <thead>
           <tr>
