@@ -13,12 +13,13 @@ $(document).ready(function() {
         numberOfSubjects.push($("#subjects2").val());
 
         for (var k = 1; k <= numberOfSubjects[0]; k++) {
-            $("#numberOfSubjects").append('<form><label for=subjectName' + k + '>Name of Subject:</label><input type="text" class="form-group" placeholder="Name OF Subject" id="subjectName"' + k + '></form>')
+            $("#numberOfSubjects").append('<form><label for=subjectName' + k + '>Name of Subject:</label><input type="text" class="form-control" placeholder="Name OF Subject" id="subjectName"' + k + '></form>')
         }
-
+        $("#submit").show();
         $("#next").hide();
         $(".hidden").hide();
         $("#teachers").append("<h3>Please Input the names and ids of all the " + numberOfTeachers[0] + " teachers in the respective fields</h3>")
+        $("#subjects").append("<h3>Please Input the names  of all the " + numberOfSubjects[0] + " subjects in the respective fields</h3>")
     });
 
 
