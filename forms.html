@@ -15,51 +15,59 @@
 </head>
 
 <body>
-  <div class="container">
+  <article class="index-form p-5">
+    <div class="container center">
+      <div class="row align-items-center">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <form id="forms">
 
-    <form id="forms">
-      <!-- Add number of teachers -->
-      <div class="form-group" id="teachers">
-        <div class="col-sm-10 hidden">
-          <label for="teachersnumber" class="col-sm-2 col-form-label">Number of teachers:</label>
-          <input type="number" class="form-control" id="teachers2" min="1" max="10">
+            <!-- Add number of teachers -->
+            <div class="form-group" id="teachers">
+              <div class="col-sm-10 hidden">
+                <label for="teachersnumber" class="col-sm-10 col-form-label">Number of teachers:</label>
+                <input type="number" class="form-control" id="teachers2" min="1" max="10">
+              </div>
+            </div>
+
+            <!-- Teachers names and Ids -->
+            <div id="teacherInput"> </div>
+
+            <!-- Add number of subjects -->
+            <div class="form-group" id="subjects">
+              <div class="col-sm-10 hidden">
+                <label for="NumberofSubjects" class="col-sm-10 col-form-label">Number of subjects:</label>
+                <input type="number" class="form-control" id="subjects2" min="1" max="10">
+              </div>
+            </div>
+
+            <!-- Subjects names and Ids -->
+            <div id="numberOfSubjects"> </div>
+
+            <div class="form-group">
+              <div class="col-md-3">
+                <button type="button" class="btn btn-block btn-outline-dark btn-lg" id="next">Next</button>
+              </div>
+            </div>
+
+            <div class="form-group" id="submitForm" style="display:none">
+              <div class="col-md-3">
+                <button type="button" class="btn btn-block btn-outline-dark btn-lg" id="submit">Submit</button>
+              </div>
+            </div>
+          </form>
         </div>
+        <div class="col-md-2"></div>
       </div>
-
-      <!-- Teachers names and Ids -->
-      <div id="teacherInput"> </div>
-
-      <!-- Add number of subjects -->
-      <div class="form-group" id="subjects">
-        <div class="col-sm-10 hidden">
-          <label for="NumberofSubjects" class="col-sm-2 col-form-label">Number of subjects:</label>
-          <input type="number" class="form-control" id="subjects2" min="1" max="10">
-        </div>
-      </div>
-
-      <div id="numberOfSubjects"> </div>
-
-
-      <div class="form-group row m-4 p-3">
-        <div class="col-sm-6">
-          <button type="button" class="btn btn-outline-success" id="next">Next</button>
-        </div>
-      </div>
-
-
-      <div class="form-group row m-4 p-3" id="submitForm" style="display:none">
-        <div class="col-sm-6">
-          <button type="button" class="btn btn-outline-success" id="submit">Submit</button>
-        </div>
-      </div>
-    </form>
+    </div>
+  </article>
 
 
     <!-- Create timetable -->
-
+    <div class="container">
     <div class="table-responsive" style="display:none">
       <div id="printableTable">
-        <table class="table" border="1">
+        <table class="table table-hover table-dark" border="1">
           <thead>
             <tr>
               <th scope="col"></th>
@@ -129,13 +137,11 @@
         </table>
       </div>
     </div>
-
+  
     <iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
 
-    <button class="btn btn-success" onclick="printTable()" id="print">Print Timetable</button>
-
+    <button class="btn btn-outline-dark btn-lg" onclick="printTable()" id="print">Print Timetable</button>
   </div>
-
 </body>
 
 </html>
