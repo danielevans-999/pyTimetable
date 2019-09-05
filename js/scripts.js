@@ -15,7 +15,7 @@ $(document).ready(function() {
         for (var k = 1; k <= numberOfSubjects[0]; k++) {
             $("#numberOfSubjects").append('<form><label for=subjectName' + k + '>Name of Subject:</label><input type="text" class="form-control" placeholder="Name OF Subject" id="subjectName"' + k + '></form>')
         }
-        $("#submit").show();
+        $("#submitForm").show();
         $("#next").hide();
         $(".hidden").hide();
         $("#teachers").append("<h3>Please Input the names and ids of all the " + numberOfTeachers[0] + " teachers in the respective fields</h3>")
