@@ -49,11 +49,13 @@ $(document).ready(function() {
 
     });
 
-    function print() {
-        window.frames["print_frame"].document.body.innerHTML = document.getElementById("printableTable").innerHTML;
-        window.frames["print_frame"].window.focus();
-        window.frames["print_frame"].window.print();
-    };
-
 
 });
+
+function printTable() {
+    var divToPrint = document.getElementById("printableTable");
+    newWin = window.open("");
+    newWin.document.write(divToPrint.outerHTML);
+    newWin.print();
+    newWin.close();
+}
