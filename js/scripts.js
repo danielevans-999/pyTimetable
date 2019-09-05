@@ -22,6 +22,12 @@ $(document).ready(function() {
         $("#subjects").append("<h3>Please Input the names  of all the " + numberOfSubjects[0] + " subjects in the respective fields</h3>")
     });
 
+    $("#submit").click(function() {
+        $(".table-responsive").show();
+        $("#forms").hide();
+        $("#submitForm").hide();
+    })
+
 
 
     for (var j = 1; j <= numberOfTeachers[0]; j++) {
