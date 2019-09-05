@@ -56,9 +56,10 @@
 
 
     <!-- Create timetable -->
-    <div id="printableTable">
-      <div class="table-responsive" style="display:none">
-        <table class="table">
+
+    <div class="table-responsive" style="display:none">
+      <div id="printableTable">
+        <table class="table" border="1">
           <thead>
             <tr>
               <th scope="col"></th>
@@ -79,7 +80,7 @@
               <td class="td"></td>
               <td class="td"></td>
               <td class="td"></td>
-              <td class="table-primary" rowspan="5" align="center">L<br><br>U<br><br>N<br><br>C<br><br>H</td>
+              <td class="table-primary" rowspan="5" style="text-align:center">L<br><br>U<br><br>N<br><br>C<br><br>H</td>
               <td class="td"></td>
               <td class="td"></td>
               <td class="td"></td>
@@ -131,7 +132,7 @@
 
     <iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
 
-    <button class="btn btn-success" onclick="print()" id="print">Print</button>
+    <button class="btn btn-success" onclick="printTable()" id="print">Print Timetable</button>
 
   </div>
 
