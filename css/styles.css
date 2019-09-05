@@ -1,17 +1,22 @@
 .images {
-  background-image: url(../assets2/landing\ image3.jpeg);
+  background-image: url(../assets2/dd[1].png);
   background-repeat: no-repeat;
   background-position: center center;
-  /* background-attachment: scroll;  */
+  background-attachment: scroll;
   background-size: cover;
-  height: 720px;
+  height: 450px;
   width: 100%;
   text-align: center;
   color: black;
-  font-size: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding-top: 20%;
+  font-size: 60px;
+  padding-top: 5%;
+  font-family: "Montserrat", sans-serif;
 }
+
+/* } 
+body{
+    font-family: 'Montserrat', sans-serif;
+} */
 
 #contact {
   font-size: 30px;
@@ -20,7 +25,7 @@
   padding-top: 3%;
 }
 footer {
-  background-color: bisque;
+  background-color: blanchedalmond;
 }
 ul {
   list-style: none;
@@ -47,9 +52,7 @@ ul {
 .button:hover {
   opacity: 1;
 }
-li {
-  border-radius: px;
-}
+
 #navbar a {
   float: left;
   display: block;
@@ -60,10 +63,28 @@ li {
   font-size: 17px;
   background-color: blue;
 }
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
+
+
+/* a{
+    font-size: 8rem;
+} */
+
+li {
+  list-style: none;
+  background-color: rgba(153, 255, 255, 0.2);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  height: 90px;
+  border-style: 1px solid teal;
+  margin: 6px;
+  width: 150px;
+  text-align: center;
 }
-ul li {
-  padding: 20px;
+a {
+  color:rgba(102,102,102,0.2);
+}
+nav{
+    position: fixed;
 }
