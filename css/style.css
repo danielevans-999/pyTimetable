@@ -6,10 +6,8 @@ table, th, td{
   * {
     display: none;
   }
-  #printableTable {
-    display: block;
-  }
 }
+
 #print{
   display: none;
 }
