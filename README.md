@@ -8,7 +8,7 @@
 * CHECK OUT MARK'S WORK @ https://github.com/MachariaMark/pyTimetable
 * CHECK OUT SAM'S WORK @ https://github.com/samuelkihanya/pyTimetables
 ## Description
-{This is a detailed description of your application, including its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }
+This is a detailed description of your application, including its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. 
 ## Setup/Installation Requirements
 Want to contribute? Lovely!
 
